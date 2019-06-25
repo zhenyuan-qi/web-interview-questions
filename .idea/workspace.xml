@@ -19,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <first_editor relative-caret-position="154">
+                <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
@@ -56,8 +56,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-31" />
-    <option name="y" value="33" />
+    <option name="x" value="70" />
+    <option name="y" value="57" />
     <option name="width" value="1260" />
     <option name="height" value="609" />
   </component>
@@ -116,16 +116,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561445532304</updated>
-      <workItem from="1561445533648" duration="4664000" />
+      <workItem from="1561445533648" duration="5900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4664000" />
+    <option name="totallyTimeSpent" value="5900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-31" y="33" width="1260" height="609" extended-state="0" />
-    <editor active="true" />
+    <frame x="70" y="57" width="1260" height="609" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939467" />
@@ -153,8 +152,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <first_editor relative-caret-position="154">
+            <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
           </first_editor>
           <second_editor />
         </state>

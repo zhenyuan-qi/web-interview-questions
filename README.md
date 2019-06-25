@@ -60,6 +60,25 @@
  * 箭头函数不可以当作构造函数，也就是说不可以使用new 命令，否则会抛出错误
  * 箭头函数不可以使用arguments对象，该对象在函数体内不存在 可以用 Rest 参数代替
  
+ ````
+//call 的实现
+
+Function.prototype.myCall = function (){
+    var self = arguments[0] || window;
+    self.fn = this;//谁调用myCall方法，this就指向谁
+    //由于使用call这个方法，参数个数不确定的  使用eval
+    var args = [];
+    for(var i=1;i<arguments.length.length;i++){
+        args.push('arguments['+i+']');
+    }
+    var result = eval('self.fn('+args.join(',')+')');
+    consoel.log(result)
+    delete self.fn;
+    return result;
+}   
+
+````
+ 
  
  
  
