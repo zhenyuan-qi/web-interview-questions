@@ -4,9 +4,9 @@
 一年之后再次回顾，会感谢曾经努力的自己！！
 
 * 2019-06-25
- > apply、call和bind 的区别？
+## apply、call和bind 的区别？
  
- 都是改变函数运行时this的指向，先搞懂this
+ 都是改变函数运行时this的指向，可以借助它们实现继承，先搞懂this
  
  * 方法调用模式：
  ```
@@ -32,6 +32,33 @@
  // document  window 对象
  ````
  
+ > call()第一个参数是要绑定给this的值，后面传入的是参数列表，当第一个参数为null
+ 、undefined 的时候，this默认指向window
+ ```
+   var arr = [1,34,54,13];
+   var max = Math.max.call(null,arr[0],arr[1],arr[2],arr[3]) //54
+    
+```
+ 
+ > apply()一个参数是要绑定给this的值，后面传入的是数组，当第一个参数为null
+    、undefined 的时候，this默认指向window
+ ```
+ var arr=[1,45,123,23];
+ var max = Math.max(null,arr) //123
+
+```
+ > bind 方法不会立即执行，返回的是一个改变了上下文 this 后的函数
+ 而原函数 this 并没有改变。
+ 
+ 
+ ###tips
+ 
+ 在ES6的箭头函数下，call和apply将失效，对于箭头函数来说：
+ * 箭头函数中this对象，就是定义时所在的对象，而不是使用时所在的对象；
+ 所以不需要 var self = this 这种写法
+ 
+ * 箭头函数不可以当作构造函数，也就是说不可以使用new 命令，否则会抛出错误
+ * 箭头函数不可以使用arguments对象，该对象在函数体内不存在 可以用 Rest 参数代替
  
  
  
