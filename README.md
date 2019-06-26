@@ -3,7 +3,7 @@
 
 一年之后再次回顾，会感谢曾经努力的自己！！
 
-* 2019-06-25
+* _2019-06-25_
 ## apply、call和bind 的区别？
  
  都是改变函数运行时this的指向，可以借助它们实现继承，先搞懂this
@@ -63,7 +63,7 @@
  ````
 //call 的实现
 
-Function.prototype.myCall = function (){
+Function.prototype.myCall = function ``````````__``````````(){
     var self = arguments[0] || window;
     self.fn = this;//谁调用myCall方法，this就指向谁
     //由于使用call这个方法，参数个数不确定的  使用eval
